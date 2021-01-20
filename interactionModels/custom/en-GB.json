@@ -1,0 +1,214 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "voice chess",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "MovePieceIntent",
+          "slots": [
+            {
+              "name": "PieceName",
+              "type": "PieceName"
+            },
+            {
+              "name": "Column",
+              "type": "ColumnLetter"
+            },
+            {
+              "name": "Row",
+              "type": "Row"
+            }
+          ],
+          "samples": [
+            "play {PieceName} {Column} {Row} ",
+            "move {PieceName} {Column} {Row}"
+          ]
+        },
+        {
+          "name": "PieceChoice",
+          "slots": [
+            {
+              "name": "Column",
+              "type": "ColumnLetter"
+            },
+            {
+              "name": "Row",
+              "type": "Row"
+            },
+            {
+              "name": "pieceName",
+              "type": "PieceName"
+            }
+          ],
+          "samples": [
+            "{Column} {Row} {pieceName}",
+            "{Column}",
+            "{Row}",
+            " {pieceName} {Row}",
+            "{Column} {pieceName}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "H"
+              }
+            },
+            {
+              "name": {
+                "value": "G"
+              }
+            },
+            {
+              "name": {
+                "value": "F"
+              }
+            },
+            {
+              "name": {
+                "value": "E"
+              }
+            },
+            {
+              "name": {
+                "value": "D"
+              }
+            },
+            {
+              "name": {
+                "value": "C"
+              }
+            },
+            {
+              "name": {
+                "value": "B"
+              }
+            },
+            {
+              "name": {
+                "value": "A"
+              }
+            }
+          ],
+          "name": "ColumnLetter"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "8"
+              }
+            },
+            {
+              "name": {
+                "value": "7"
+              }
+            },
+            {
+              "name": {
+                "value": "6"
+              }
+            },
+            {
+              "name": {
+                "value": "5"
+              }
+            },
+            {
+              "name": {
+                "value": "4"
+              }
+            },
+            {
+              "name": {
+                "value": "3"
+              }
+            },
+            {
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "name": {
+                "value": "1"
+              }
+            }
+          ],
+          "name": "Row"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Bishop"
+              }
+            },
+            {
+              "name": {
+                "value": "Rook"
+              }
+            },
+            {
+              "name": {
+                "value": "King"
+              }
+            },
+            {
+              "name": {
+                "value": "Pawn"
+              }
+            },
+            {
+              "name": {
+                "value": "Queen"
+              }
+            },
+            {
+              "name": {
+                "value": "Knight"
+              }
+            }
+          ],
+          "name": "PieceName"
+        }
+      ]
+    }
+  },
+  "version": "14"
+}
